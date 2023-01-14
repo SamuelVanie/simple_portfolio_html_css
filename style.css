@@ -60,6 +60,8 @@ li{
 	display: none;
 	cursor: pointer;
 	width: 30px;
+	position: absolute;
+	right: 0px;
 }
 
 .bar{
@@ -168,9 +170,14 @@ img{
 }
 
 #social-media-links{
+	list-style-type: none;
+	padding: 0;
+	margin: 2rem 0;
 	display: flex;
-	justify-content: space-evenly;
-  flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 3rem;
+	font-size: 1.4rem;
 }
 
 #call-phrase{
@@ -181,11 +188,9 @@ img{
 	margin-bottom: 10%;
 }
 
-.social-media-link{
-	display: flex;
+.social-media-link a{
 	color: white;
 	font-size: 100%;
-	align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
