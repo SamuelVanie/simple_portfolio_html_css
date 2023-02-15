@@ -92,6 +92,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .project-header {
@@ -104,7 +105,8 @@ li {
 #project-cards {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1200px;
   padding-left: 30px;
   padding-right: 30px;
   gap: 1.2rem;
@@ -182,6 +184,12 @@ img {
 .social-media-link a {
   color: white;
   font-size: 100%;
+}
+
+@media (min-width: 1200px) {
+  #project-cards {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
 }
 
 @media only screen and (max-width: 768px) {
